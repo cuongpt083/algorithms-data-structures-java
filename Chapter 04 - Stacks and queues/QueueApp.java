@@ -21,5 +21,8 @@ public class QueueApp {
             System.err.println(" ");
         }
         System.out.println(" ");
+
+
+        theQueue.displayQueue();
     }
 }
