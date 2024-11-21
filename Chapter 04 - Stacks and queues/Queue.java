@@ -1,6 +1,13 @@
 //Bai 1 : viết 1 method cho lớp queue để hiện thị nội dung của hàng đợi
 // cần hiển thị nội dung của hàng đợi từ phần tử đầu tiên đợc chèn vào đến phần tử cuối cung
 
+//Bai 2 : tạo class Deque 
+// Nó nên bao gồm InsertLeft(), InsertRight(), RemoveLeft(),
+// các phương thức RemoveRight(), isEmpty() và isFull()
+
+//Bai 3 : Write a program that implements a stack class that is based on the Deque class
+
+
 
 public class Queue {
     private int maxSize;
