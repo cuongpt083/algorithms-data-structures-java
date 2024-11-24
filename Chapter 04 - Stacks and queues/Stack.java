@@ -42,7 +42,7 @@ public class Stack {
 
        for(int i = 0 ; i < deque.getNItems() ; i ++) {
         int index = (deque.getRear() - i + deque.getMaxSize()) % deque.getMaxSize();
-        System.out.println(deque.);
+        System.out.println(deque );
        }
     }
 }

@@ -6,7 +6,7 @@ public class Deque {
     private int nIteams;
 
     public Deque(int size) {
-        size = maxSize;
+        maxSize = size;
         dequeArray = new long[maxSize];
         front = 0;
         rear = -1;
@@ -37,17 +37,18 @@ public class Deque {
         if(isFull()) {
             System.out.println("Mang da day phan tu !");
         }
-        if(front == 0) {
-            front = maxSize;
+        if(rear == maxSize - 1) {
+            rear = -1;
         }
 
-        dequeArray[++front] = value;
+        dequeArray[++rear] = value;
         nIteams ++ ;
     }
 
     public long removeLeft() {
         if(isEmpty()){
             System.out.println("Khong the chen vao ben phai vi mang trong!");
+            return -1;
         }
 
         long temp = dequeArray[front++];
@@ -61,6 +62,7 @@ public class Deque {
     public long removeRight() {
         if(isEmpty()){
             System.out.println("Khong the chen vao ben phai vi mang trong!");
+            return -1;
         }
         if(rear < 0 ) {
             rear = maxSize - 1;
